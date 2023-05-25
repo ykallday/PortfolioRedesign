@@ -51,10 +51,11 @@ const Background = styled.div`
   background-color: #19dcea;
   animation-iteration-count: infinite;
   width: 100%;
-  height: 20vh;
+  height: auto;
   opacity: 0.8;
+
   @media only screen and (min-width: 600px) {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     margin-right: 20px;
     grid-template-columns: 1 / span1;

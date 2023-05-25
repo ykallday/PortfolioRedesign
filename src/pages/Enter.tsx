@@ -7,7 +7,10 @@ import VerticalNav from "../components/VerticalNav";
 const Header = styled.h1`
   color: black;
   text-align: left;
-  margin-top: 50%;
+  margin-top: 10%;
+  @media only screen and (min-width: 600px) {
+    margin-top: 50%;
+  }
 `;
 
 const Main = styled.body`
@@ -18,7 +21,7 @@ const Main = styled.body`
 
   @media only screen and (min-width: 600px) {
     display: grid;
-    grid-template-columns: 40% 60%
+    grid-template-columns: 40% 60%;
     padding: 0px 10px;
   }
 `;
@@ -51,7 +54,7 @@ export default function EnterAnimation() {
         <TagLine>
           I specialize in digital marketing and front-end development.
         </TagLine>
-        <EnterButton text="Enter" />
+        {/* <EnterButton text="Enter" /> */}
       </RightSide>
     </Main>
   );
