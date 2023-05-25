@@ -1,10 +1,10 @@
-import EnterAnimation from "./components/EnterAnimation";
+import Enter from "./pages/Enter";
 import "./App.css";
 
 function App() {
   return (
     <>
-      <EnterAnimation />
+      <Enter />
     </>
   );
 }
