@@ -1,31 +1,58 @@
 import styled from "styled-components";
-
+import { Link } from "react-router-dom";
+import BackgroundGradientAnim from "./BackgroundGradientAnim";
 const NavButton = styled.button`
   width: 40%;
-  margin: 5%;
+  
+  margin: 2%;
   border-radius: 5px;
   text-align:center;
   font-size:.9em;
+  padding:10px;
+  border:transparent;
+  &:hover {
+    box-shadow: 2px 2px 4px black;
+  }
+  &:active{
+    box-shadow: inset 0 0 5px gray;
+    scale: calc(0.98);
+
+  }
   @media only screen and (min-width: 600px) {
     border-radius:100%;
-    width: 90px ;
-    height: 90px;
+    width: 80px;
+    height: 80px;
+
     display:block;
     margin: 20px auto;
     font-size: .7em;
+    
 
 `;
-export default function VerticalNav() {
+export default function Nav() {
   return (
-    <>
-      <a href="#about">
+    <BackgroundGradientAnim>
+      <Link to="">
+        <NavButton>Home</NavButton>
+      </Link>
+      <Link to="about">
         <NavButton>About</NavButton>
-      </a>
-      <NavButton id="Skills">Skills</NavButton>
-      <NavButton id="Resume">Resume</NavButton>
-      <NavButton id="SoftwareDevelopment">Software Development</NavButton>
-      <NavButton id="DigitalMarketing">Digital Marketing</NavButton>
-      <NavButton id="Connect">Connect</NavButton>
-    </>
+      </Link>
+      <Link to="skills">
+        <NavButton>Skills</NavButton>
+      </Link>
+      <Link to="resume">
+        <NavButton>Resume</NavButton>
+      </Link>
+      <Link to="software_development">
+        <NavButton id="SoftwareDevelopment">Software Development</NavButton>
+      </Link>
+      <Link to="digital_marketing">
+        <NavButton id="DigitalMarketing">Digital Marketing</NavButton>
+      </Link>
+      <Link to="connect">
+        <NavButton id="Connect">Connect</NavButton>
+      </Link>
+    </BackgroundGradientAnim>
   );
 }

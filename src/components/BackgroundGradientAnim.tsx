@@ -18,25 +18,25 @@ const anim = keyframes`
       background-color: #000000;
     }
     12% {
-      background-color: #232650;
+      background-color: #440077;
     }
     24% {
-      background-color: #2D35A0;
+      background-color: #000000;
     }
     36% {
-      background-color: #4601A9;
+      background-color: #034010;
     }
     48% {
-      background-color: #3A2357;
+      background-color: #000000;
     }
     60% {
-        background-color: #4601A9;
+        background-color: #02256B;
       }
     72% {
-        background-color: #2D35A0;
+        background-color: #000000;
       }
     84% {
-        background-color: #232650;
+        background-color: #371C3A;
       }
     100% {
         background-color: #000000;
@@ -50,14 +50,15 @@ const Background = styled.div`
   animation-duration: 20s;
   background-color: #19dcea;
   animation-iteration-count: infinite;
-  width: 100%;
+  width: 100vw;
+  margin: 0 auto;
   height: auto;
   opacity: 0.8;
-
+  text-align: center;
   @media only screen and (min-width: 600px) {
+    display: fixed;
     height: 100%;
     width: 100%;
-    margin-right: 20px;
     grid-template-columns: 1 / span1;
   }
 `;
