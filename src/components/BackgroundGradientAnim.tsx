@@ -52,7 +52,7 @@ const Background = styled.div`
   animation-iteration-count: infinite;
   width: 100vw;
   margin: 0 auto;
-  height: auto;
+  height: 100vh;
   opacity: 0.8;
   text-align: center;
   @media only screen and (min-width: 600px) {

@@ -8,7 +8,7 @@ const Header = styled.h1`
   text-align: left;
   margin-top: 10%;
   @media only screen and (min-width: 600px) {
-    margin-top: 50%;
+    margin-top: 30%;
   }
 `;
 
